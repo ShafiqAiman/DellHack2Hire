@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/menu"
+    android:id="@+id/categories"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3287c1"
+    android:background="#FFFFFF"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".MainActivity">
+    tools:context=".Categories">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="MAIN MENU"
-        android:textColor="#000000"
+        android:text="CATEGORIES"
+        android:textColor="#3287c1"
         android:textSize="40sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:clipToPadding="false"
         android:gravity="center"
         android:orientation="horizontal"
-        android:backgroundTint="#3287c1">
+        >
 
         <androidx.cardview.widget.CardView
             android:id="@+id/profile"
@@ -40,45 +41,28 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
+                android:background="#3287c1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFFFFF"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/profile"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:background="@drawable/training"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Profile"
-                    android:textColor="#000000"
+                    android:text="Training"
+                    android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#3287c1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#3F51B5"
-                    android:fontFamily="monospace"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="To manage your Profile"
-                    android:textColor="@color/backgroundcolor"
-                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -94,6 +78,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
+                android:background="#3287c1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -102,36 +87,19 @@
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/category"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:background="@drawable/event"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Categories"
-                    android:textColor="#000000"
+                    android:text="Events"
+                    android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#3287c1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#3F51B5"
-                    android:fontFamily="monospace"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="To check available events"
-                    android:textColor="@color/backgroundcolor"
-                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -142,11 +110,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
         android:clipToPadding="false"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:backgroundTint="#3287c1">
+        android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/history"
@@ -158,6 +126,7 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
+                android:background="#3287c1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -166,36 +135,19 @@
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/history"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:background="@drawable/hangout"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Event History"
-                    android:textColor="#000000"
+                    android:text="Social Hangout"
+                    android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#3287c1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#3F51B5"
-                    android:fontFamily="monospace"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Events that already attended"
-                    android:textColor="@color/backgroundcolor"
-                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -211,45 +163,28 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
+                android:background="#3287c1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFFFFF"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:background="@drawable/logout"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:background="@drawable/others"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Log Out"
-                    android:textColor="#000000"
+                    android:text="Others"
+                    android:textColor="#FFFFFF"
                     android:textSize="18sp"
                     android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_margin="10dp"
-                    android:background="#3287c1" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="#3F51B5"
-                    android:fontFamily="monospace"
-                    android:gravity="center"
-                    android:padding="5dp"
-                    android:text="Exit the application"
-                    android:textColor="@color/backgroundcolor"
-                    android:textSize="12sp" />
 
             </LinearLayout>
 
