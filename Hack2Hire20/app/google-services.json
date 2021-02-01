@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "90824515754",
+    "project_id": "hack2hire-2-0",
+    "storage_bucket": "hack2hire-2-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90824515754:android:71d790b1ffc51664bdb0d3",
+        "android_client_info": {
+          "package_name": "com.example.hack2hire20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90824515754-tbcnihjm0tg2mdjh49gsor4ghducmk08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA050yVPUVd0UEzLvTK7aYQCZxXO0YqtBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90824515754-tbcnihjm0tg2mdjh49gsor4ghducmk08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
