@@ -53,6 +53,8 @@ public class TrainingList extends AppCompatActivity {
                         details.putExtra("Name", traininglist.getName());
                         details.putExtra("Date", traininglist.getDate());
                         details.putExtra("Time", traininglist.getTime());
+                        details.putExtra("Description", traininglist.getDescription());
+                        details.putExtra("Location", traininglist.getLocation());
                         startActivity(details);
                     }
                 });

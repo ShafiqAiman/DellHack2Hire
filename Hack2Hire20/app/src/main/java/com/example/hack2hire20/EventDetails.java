@@ -16,8 +16,10 @@ public class EventDetails extends AppCompatActivity {
     String name = "";
     String date = "";
     String time = "";
+    String description = "";
+    String location = "";
 
-    private TextView trainingname, trainingdate, trainingtime;
+    private TextView trainingname, trainingdate, trainingtime, trainingdescription, traininglocation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +30,19 @@ public class EventDetails extends AppCompatActivity {
         name = getIntent().getStringExtra("Name");
         date = getIntent().getStringExtra("Date");
         time = getIntent().getStringExtra("Time");
+        description = getIntent().getStringExtra("Description");
+        location = getIntent().getStringExtra("Location");
 
         trainingname = (TextView)findViewById(R.id.Name);
         trainingdate = (TextView)findViewById(R.id.dateData);
         trainingtime = (TextView)findViewById(R.id.timeData);
+        trainingdescription = (TextView)findViewById(R.id.description);
+        traininglocation = (TextView)findViewById(R.id.locationData);
 
         trainingname.setText(name);
         trainingdate.setText(date);
         trainingtime.setText(time);
+        trainingdescription.setText(description);
+        traininglocation.setText(location);
     }
 }

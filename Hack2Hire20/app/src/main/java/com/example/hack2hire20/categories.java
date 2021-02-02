@@ -6,10 +6,12 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class categories extends AppCompatActivity {
 
-    CardView training, events, socialhangout, others;
+    private CardView training, events, socialhangout, others;
+    private Button addEvent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class categories extends AppCompatActivity {
         events = (CardView) findViewById(R.id.category);
         socialhangout = (CardView) findViewById(R.id.history);
         others = (CardView) findViewById(R.id.logout);
+        addEvent = (Button)findViewById(R.id.createEventButton);
 
         training.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +52,14 @@ public class categories extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(categories.this, OthersList.class);
+                startActivity(intent);
+            }
+        });
+
+        addEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(categories.this, CreateEvent.class);
                 startActivity(intent);
             }
         });
