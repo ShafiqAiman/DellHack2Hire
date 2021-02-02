@@ -21,6 +21,14 @@ public class MainMenu extends AppCompatActivity {
         eventhistories = (CardView) findViewById(R.id.history);
         logout = (CardView) findViewById(R.id.logout);
 
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainMenu.this, Profile.class);
+                startActivity(intent);
+            }
+        });
+
         categories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
