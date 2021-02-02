@@ -2,6 +2,7 @@ package com.example.hack2hire20;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -54,6 +55,8 @@ public class CreateEvent extends AppCompatActivity {
                 id.child(Name).setValue(data);
 
                 Toast.makeText(CreateEvent.this,"Event is created!",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(CreateEvent.this, categories.class);
+                startActivity(intent);
             }
         });
     }
