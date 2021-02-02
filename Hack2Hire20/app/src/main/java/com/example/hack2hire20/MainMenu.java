@@ -7,32 +7,32 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class MainMenu extends AppCompatActivity {
 
-    CardView Participant, CommitteeLead, Manager;
+    CardView profile, categories, eventhistories, logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_menu);
 
-        Participant = (CardView) findViewById(R.id.participant);
-        CommitteeLead = (CardView) findViewById(R.id.committeelead);
-        Manager = (CardView) findViewById(R.id.manager);
+        profile = (CardView) findViewById(R.id.profile);
+        categories = (CardView) findViewById(R.id.category);
+        eventhistories = (CardView) findViewById(R.id.history);
+        logout = (CardView) findViewById(R.id.logout);
 
-        CommitteeLead.setOnClickListener(new View.OnClickListener() {
+        categories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Login.class);
+                Intent intent = new Intent(MainMenu.this, categories.class);
                 startActivity(intent);
             }
         });
 
-        /*
-        .setOnClickListener(new View.OnClickListener() {
+        eventhistories.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, History.class);
+                Intent intent = new Intent(MainMenu.this, History.class);
                 startActivity(intent);
             }
         });
@@ -43,6 +43,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
                 System.exit(0);
             }
-        });*/
+        });
     }
 }
