@@ -59,7 +59,7 @@ public class categories extends AppCompatActivity {
         addEvent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(categories.this, CreateEvent.class);
+                Intent intent = new Intent(categories.this, NewEvent.class);
                 startActivity(intent);
             }
         });

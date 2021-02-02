@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    >
+    tools:context=".NewEvent">
 
     <Button
         android:id="@+id/create"
@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintVertical_bias="0.999" />
 
     <ImageView
         android:id="@+id/Image"
@@ -44,21 +44,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.235" />
+        app:layout_constraintVertical_bias="0.34" />
 
     <EditText
         android:id="@+id/Name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="305dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
+        android:textSize="14sp"
         android:hint="Name of your Event"
         android:inputType="textPersonName"
         android:textColor="@android:color/background_dark"
         android:textColorHint="#808080"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintHorizontal_bias="0.386"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Image"
         app:layout_constraintVertical_bias="0.0" />
@@ -67,7 +68,7 @@
         android:id="@+id/Description"
         android:layout_width="305dp"
         android:layout_height="44dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Description of your Event"
         android:inputType="textPersonName"
@@ -92,7 +93,7 @@
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Description"
-        app:layout_constraintVertical_bias="0.072" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <EditText
         android:id="@+id/Location"
@@ -164,7 +165,7 @@
         android:background="@drawable/common_google_signin_btn_icon_light_normal_background"
         android:ems="10"
         android:hint="   00:00 - 00:00 "
-        android:inputType="time"
+
         android:textColor="@color/black"
         android:textColorHint="#808080"
         android:textSize="14sp"
@@ -187,7 +188,7 @@
         app:layout_constraintHorizontal_bias="0.757"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Description"
-        app:layout_constraintVertical_bias="0.072" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -204,6 +205,7 @@
 
         <RadioGroup
             android:id="@+id/radioGroup"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -211,7 +213,7 @@
             <RadioButton
                 android:id="@+id/Training"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@drawable/radio_selector"
                 android:button="@android:color/transparent"
                 android:elevation="4dp"
@@ -222,7 +224,7 @@
             <RadioButton
                 android:id="@+id/SocialHangout"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@drawable/radio_selector"
                 android:button="@android:color/transparent"
                 android:elevation="4dp"
@@ -233,7 +235,7 @@
             <RadioButton
                 android:id="@+id/Event"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@drawable/radio_selector"
                 android:button="@android:color/transparent"
                 android:elevation="4dp"
@@ -244,7 +246,7 @@
             <RadioButton
                 android:id="@+id/Others"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:background="@drawable/radio_selector"
                 android:button="@android:color/transparent"
                 android:elevation="4dp"

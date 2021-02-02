@@ -48,6 +48,7 @@ public class Login extends AppCompatActivity {
                             if (user.getPassword().equals(password.getText().toString())){
                                 Toast.makeText(Login.this,"Login Successfully!",Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(Login.this, MainMenu.class);
+                                intent.putExtra("PhoneNum", phonenum.getText().toString());
                                 startActivity(intent);
                             }else{
                                 Toast.makeText(Login.this, "Wrong Password!", Toast.LENGTH_SHORT).show();
